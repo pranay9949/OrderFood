@@ -1,0 +1,239 @@
+body{
+    margin-inline: 60px;
+}
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-options{
+    display: flex;
+    align-items: center;
+    width:30%;
+    justify-content: space-evenly;
+    color:#253d4e;
+    font: 1em sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.img-div{
+    background-image: url("./images/Rectangle\ 20\ \(1\).png");
+  background-size:100%;
+  border-radius: 25px;
+ background-repeat:no-repeat;
+  
+  height: 40vh;
+ 
+}
+.image-text{
+    margin-inline: 50px;
+    padding-top: 40px;
+    margin-top: 40px;
+    font: 1em sans-serif;
+}
+.image-text>h6{
+    color: #dc582a;
+   font-size: medium;
+   margin-bottom: 0px;
+}
+.image-text>h3{
+    color: white;
+    width: 200px;
+}
+.image-text>p{
+    color: white;
+
+}
+.info-head{
+    font: 1em sans-serif;
+    font-weight: 600;
+
+}
+#search-bar{
+  
+   border: none;
+   background-color: transparent;
+  
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 10px;
+}
+.search-div{
+    width:100% ;
+   height: 30px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    color:white;
+   gap:15px;
+    font-size: 15px;
+   margin-top: 20px;
+}
+
+#recipes{
+    background-color: #eaaa00;
+    width:150px;
+    height: 40px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#vegrecipes{
+      background-color:#c4d600 ;
+      width:150px;
+    height: 40px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#nonvegrecipes{
+        background-color: #dc582a;
+        width:150px;
+    height: 40px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.chack{
+    display: flex;
+}
+.images-cont{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.card{
+   width:200px;
+   height: 280px;
+   margin: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    box-shadow:2px 10px 5px lightgrey;
+    padding-inline:8px;
+}
+.card-image{
+    width: 95%;
+    height: 150px;
+    margin:5px;
+    border-radius: 10px;
+}
+#item-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    
+   
+}
+.text{
+    color: #253d4e;
+}
+.items-rating{
+    display: flex;
+    justify-content: space-between;
+}
+.type{
+    color:#a1a1a1;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 13px;
+}
+.item-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color:#252525;
+}
+.bottom-1{
+    width: 250px;
+}
+table{
+    margin: 20px;
+}
+th,td,tr{
+   padding: 10px;
+   padding-inline:30px ;
+   color:#666666;
+}
+th{
+    color: #253d4e;
+    
+}
+.bottom-3{
+    width: 300px;
+}
+@media (max-width:768px){
+   .img-div{
+    display: none;
+   }
+   #item-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 20px;
+   }
+  .images-cont{
+    flex-direction: column;
+  }
+  .card{
+    margin: 0px;
+  }
+  body{
+    margin: 10px;
+  }
+  .card{
+    width:170px;
+   
+ }
+ .nav-options{
+    display: none;
+ }
+ #menu{
+    display: block;
+}
+}
+@media (min-width:768px){
+    #menu{
+        display: none;
+    }
+}
+.card:hover{
+    transform: scale(1.02);
+}
+#recipes:hover{
+  transform: scale(1.03);
+ 
+}
+#vegrecipes:hover{
+    transform: scale(1.03);
+ 
+}
+#nonvegrecipes:hover{
+    transform: scale(1.03);
+}
+.search-div:hover{
+    background-color:lightgray;
+    transform: scale(1.01);
+}
+.hide{
+    color:red !important;
+  
+}
+#option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.display{
+    display: flex!important;
+}
